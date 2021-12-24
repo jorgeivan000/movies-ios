@@ -1,0 +1,14 @@
+//
+//  MoviesAppDevelop.xcconfig
+//  MoviesApp
+//
+//  Created by jorgehc on 9/12/18.
+//  Copyright © 2018 jorgehc.com. All rights reserved.
+//
+CONFIG_NAME = MoviesApp
+PRODUCT_BUNDLE_IDENTIFIER = com.app.dev.movies
+CORE_API_URL = api.themoviedb.org/3
+CORE_API_VERSION = v1
+URL_TYPE_SCHEME = com.googleusercontent.apps.691804068931-44vt3vrfsurs7cooefv38ver5j7bpah7
+TMDB_API_KEY = 8167ad35619b0d50aa8c84b1551cee8e
+

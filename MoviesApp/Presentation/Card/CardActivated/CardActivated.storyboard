@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStdBold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStdBook.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Card Activated View Controller-->
+        <scene sceneID="RtN-OQ-iW2">
+            <objects>
+                <viewController storyboardIdentifier="CardActivatedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c8b-mQ-crJ" customClass="CardActivatedViewController" customModule="Enso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBz-If-wkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" id="Ft3-vI-lbg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="cardDarkActivated" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-fq-Fg8">
+                                        <rect key="frame" x="0.0" y="40" width="320" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="5CT-Cf-Ghu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Tu tarjeta está activada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPX-8Z-jXr">
+                                        <rect key="frame" x="16" y="250" width="288" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
+                                        <color key="textColor" name="darkIndigo"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fondeala con tu CLABE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-eK-bWa">
+                                        <rect key="frame" x="16" y="336.5" width="288" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="hP7-Y9-lFB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" name="darkIndigo"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-a0-m4D" customClass="CopyableLabel" customModule="Enso" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="365.5" width="288" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="J7V-Pk-VFA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" name="darkIndigo"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Todo el dinero que recibas a través de Enso o que transfieras a tu cuenta estará disponible en tu tarjeta." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PRF-nB-xRb">
+                                        <rect key="frame" x="16" y="277.5" width="288" height="56"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-lm-GKb" customClass="ActionsContainer" customModule="Enso" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="454" width="320" height="114"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="darkIndigo"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="114" id="sqd-Ik-hKz"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasSecondaryAction" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mainTitle" value="Ver detalle de tarjeta"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="secondaryTitle" value="¿Cómo fondear mi cuenta?"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasTopView" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasHeader" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-Q3-n0t">
+                                        <rect key="frame" x="16" y="405.5" width="288" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="EPa-ZA-bwZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" name="darkIndigo"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-Rp-N5y">
+                                        <rect key="frame" x="16" y="430.5" width="288" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2du-Kv-Egd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" name="darkIndigo"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZF1-Rp-N5y" secondAttribute="trailing" constant="16" id="1ev-n3-QkB"/>
+                                    <constraint firstItem="Z5z-fq-Fg8" firstAttribute="centerX" secondItem="Ft3-vI-lbg" secondAttribute="centerX" id="2Bw-3i-8qR"/>
+                                    <constraint firstItem="JPX-8Z-jXr" firstAttribute="top" secondItem="Z5z-fq-Fg8" secondAttribute="bottom" constant="-10" id="2di-ar-Upf"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" constant="16" id="8sp-CN-tQo"/>
+                                    <constraint firstItem="Z5z-fq-Fg8" firstAttribute="top" secondItem="Ft3-vI-lbg" secondAttribute="top" constant="40" id="A6Q-JX-rnd"/>
+                                    <constraint firstItem="xtv-eK-bWa" firstAttribute="top" secondItem="PRF-nB-xRb" secondAttribute="bottom" constant="3" id="AIy-Sx-5FK"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="top" secondItem="JPX-8Z-jXr" secondAttribute="bottom" constant="4" id="Ccp-ku-Xyl"/>
+                                    <constraint firstItem="lu6-Q3-n0t" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" constant="16" id="Jsn-Du-wbD"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRF-nB-xRb" secondAttribute="trailing" constant="16" id="KGZ-2D-f20"/>
+                                    <constraint firstItem="Z5z-fq-Fg8" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" id="MIm-4H-4s3"/>
+                                    <constraint firstItem="ZF1-Rp-N5y" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" constant="16" id="QpU-xD-aOE"/>
+                                    <constraint firstItem="4vW-lm-GKb" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" id="Svd-XM-owS"/>
+                                    <constraint firstItem="JPX-8Z-jXr" firstAttribute="centerX" secondItem="Ft3-vI-lbg" secondAttribute="centerX" id="Vbg-ak-Eec"/>
+                                    <constraint firstItem="JPX-8Z-jXr" firstAttribute="leading" secondItem="Ft3-vI-lbg" secondAttribute="leading" constant="16" id="Vgp-Qy-Vmk"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="centerX" secondItem="Ft3-vI-lbg" secondAttribute="centerX" id="WKH-N2-Lt8"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="leading" secondItem="D6I-a0-m4D" secondAttribute="leading" id="ca5-jB-6Y9"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="leading" secondItem="xtv-eK-bWa" secondAttribute="leading" id="f4Y-ps-iPu"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="trailing" secondItem="xtv-eK-bWa" secondAttribute="trailing" id="gLr-BE-Hk7"/>
+                                    <constraint firstItem="Z5z-fq-Fg8" firstAttribute="trailing" secondItem="Ft3-vI-lbg" secondAttribute="trailing" id="h9o-4G-dGE"/>
+                                    <constraint firstAttribute="trailing" secondItem="JPX-8Z-jXr" secondAttribute="trailing" constant="16" id="hkV-pX-lQg"/>
+                                    <constraint firstItem="D6I-a0-m4D" firstAttribute="top" secondItem="xtv-eK-bWa" secondAttribute="bottom" constant="4" id="lbG-HH-l9z"/>
+                                    <constraint firstItem="4vW-lm-GKb" firstAttribute="bottom" secondItem="Ft3-vI-lbg" secondAttribute="bottom" id="nAW-S4-1iW"/>
+                                    <constraint firstItem="lu6-Q3-n0t" firstAttribute="top" secondItem="D6I-a0-m4D" secondAttribute="bottom" constant="15" id="ohz-lu-F1d"/>
+                                    <constraint firstItem="PRF-nB-xRb" firstAttribute="trailing" secondItem="D6I-a0-m4D" secondAttribute="trailing" id="pKr-wY-27q"/>
+                                    <constraint firstAttribute="trailing" secondItem="lu6-Q3-n0t" secondAttribute="trailing" constant="16" id="tAD-Jf-zhC"/>
+                                    <constraint firstItem="4vW-lm-GKb" firstAttribute="trailing" secondItem="Ft3-vI-lbg" secondAttribute="trailing" id="wFL-y7-6wL"/>
+                                    <constraint firstItem="ZF1-Rp-N5y" firstAttribute="top" secondItem="lu6-Q3-n0t" secondAttribute="bottom" id="wLP-cn-DQ1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kj2-c6-kyT"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionContainer" destination="4vW-lm-GKb" id="E31-Eg-Kt4"/>
+                        <outlet property="clabe" destination="D6I-a0-m4D" id="0XF-CK-d6z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei0-5v-k11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.5" y="143.66197183098592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardDarkActivated" width="375" height="235"/>
+        <namedColor name="darkIndigo">
+            <color red="0.078000001609325409" green="0.050999999046325684" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

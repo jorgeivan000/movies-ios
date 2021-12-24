@@ -1,0 +1,12 @@
+
+@font-face
+{
+    font-family: 'CircularStd-Book';
+    src: local('CircularStd-Book'), url('CircularStdBook.otf') format('opentype');
+}
+
+
+body, span {
+    font-family: 'CircularStd-Book' !important;
+    font-size: 12pt !important;
+}

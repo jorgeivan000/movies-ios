@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStdBook.otf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="CircularStdMedium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="SelectableContactTableViewCell" customModule="Enso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="585" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="585" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T1a-IT-CA2">
+                        <rect key="frame" x="16" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="UaM-mv-4Xq"/>
+                            <constraint firstAttribute="height" constant="40" id="pQg-t5-85Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Gerardo Gomez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqE-w5-A5O">
+                        <rect key="frame" x="71" y="14" width="433" height="19"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                        <color key="textColor" red="0.1026879176" green="0.075192756949999995" blue="0.27013173699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IC-Q8-hbz">
+                        <rect key="frame" x="16" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="FWH-9H-I8O"/>
+                            <constraint firstAttribute="height" constant="40" id="eT1-6j-J0J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                        <color key="textColor" red="0.078431372550000003" green="0.050980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 52  1 554370 5925" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aR-4B-tqG">
+                        <rect key="frame" x="71" y="36" width="359" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="359" id="2Nt-f7-c4v"/>
+                            <constraint firstAttribute="height" constant="15" id="a2o-b8-mR6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
+                        <color key="textColor" red="0.72549019609999998" green="0.72181564570000001" blue="0.77111369370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naN-9n-nGc">
+                        <rect key="frame" x="536" y="22.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="dGf-TY-7H8"/>
+                            <constraint firstAttribute="width" constant="22" id="dvB-SG-ZJW"/>
+                        </constraints>
+                        <state key="normal" image="iconUnchecked"/>
+                        <state key="selected" image="iconChecked"/>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B08-pA-LmS">
+                        <rect key="frame" x="519" y="12" width="46" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="C8S-L7-uww"/>
+                            <constraint firstAttribute="width" constant="46" id="gUg-d6-Jx7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="12"/>
+                        <color key="textColor" name="coral"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconEnsoBadge" translatesAutoresizingMaskIntoConstraints="NO" id="mM0-Se-xzR">
+                        <rect key="frame" x="42" y="38.5" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="3WI-YA-5PL"/>
+                            <constraint firstAttribute="width" constant="14" id="NEM-9o-cqS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1aR-4B-tqG" firstAttribute="leading" secondItem="T1a-IT-CA2" secondAttribute="trailing" constant="15" id="7Sg-GI-UnL"/>
+                    <constraint firstItem="1aR-4B-tqG" firstAttribute="top" secondItem="VqE-w5-A5O" secondAttribute="bottom" constant="3" id="HkH-FH-zXq"/>
+                    <constraint firstItem="naN-9n-nGc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-0.25" id="Nro-XY-Zw1"/>
+                    <constraint firstItem="6IC-Q8-hbz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SKo-sW-eQv"/>
+                    <constraint firstItem="T1a-IT-CA2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="T9Y-g8-Ke4"/>
+                    <constraint firstItem="B08-pA-LmS" firstAttribute="leading" secondItem="VqE-w5-A5O" secondAttribute="trailing" constant="15" id="Uqd-se-8xS"/>
+                    <constraint firstItem="6IC-Q8-hbz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-0.75" id="YCP-Ep-Pkx"/>
+                    <constraint firstItem="VqE-w5-A5O" firstAttribute="leading" secondItem="6IC-Q8-hbz" secondAttribute="trailing" constant="15" id="a9I-KY-w2v"/>
+                    <constraint firstItem="T1a-IT-CA2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-0.75" id="cWt-Od-ZC5"/>
+                    <constraint firstItem="B08-pA-LmS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="fXW-W1-0au"/>
+                    <constraint firstItem="VqE-w5-A5O" firstAttribute="leading" secondItem="T1a-IT-CA2" secondAttribute="trailing" constant="15" id="hbd-Xs-6mb"/>
+                    <constraint firstAttribute="trailing" secondItem="B08-pA-LmS" secondAttribute="trailing" constant="20" id="jDe-cH-CkC"/>
+                    <constraint firstItem="1aR-4B-tqG" firstAttribute="leading" secondItem="mM0-Se-xzR" secondAttribute="trailing" constant="15" id="tJI-0t-N7E"/>
+                    <constraint firstItem="VqE-w5-A5O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="umz-YN-pcj"/>
+                    <constraint firstAttribute="bottom" secondItem="mM0-Se-xzR" secondAttribute="bottom" constant="14.5" id="yTh-ed-uim"/>
+                    <constraint firstAttribute="trailing" secondItem="naN-9n-nGc" secondAttribute="trailing" constant="27" id="yfu-kD-eVR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="SelectableContactTableViewCell"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="adminLabel" destination="B08-pA-LmS" id="iGp-ld-vbi"/>
+                <outlet property="checkButton" destination="naN-9n-nGc" id="kft-5T-xQZ"/>
+                <outlet property="ensoContactBadge" destination="mM0-Se-xzR" id="k52-UF-6T5"/>
+                <outlet property="initialsLabel" destination="6IC-Q8-hbz" id="aFD-6m-Nh7"/>
+                <outlet property="nameLabel" destination="VqE-w5-A5O" id="Ind-6p-TIr"/>
+                <outlet property="phoneLabel" destination="1aR-4B-tqG" id="6wV-BY-MvC"/>
+                <outlet property="profilePicture" destination="T1a-IT-CA2" id="WUM-oG-QNf"/>
+            </connections>
+            <point key="canvasLocation" x="467.39130434782612" y="187.16517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconChecked" width="22" height="22"/>
+        <image name="iconEnsoBadge" width="16" height="16"/>
+        <image name="iconUnchecked" width="22" height="22"/>
+        <namedColor name="coral">
+            <color red="0.99199998378753662" green="0.37299999594688416" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
