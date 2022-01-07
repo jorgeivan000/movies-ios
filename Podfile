@@ -6,8 +6,6 @@ target "MoviesApp" do
   use_frameworks!
 
   # Pods for MoviesApp
-  pod "Alamofire", "4.5"
-  pod "DefaultsKit", "0.2"
   pod "RealmSwift", "3.19.0"
   pod "SDWebImage", "4.0"
 
@@ -28,8 +26,6 @@ end
 target "MoviesAppMockTesting" do
     use_frameworks!
     # Pods for testing
-    pod "Alamofire", "4.5"
-    pod "DefaultsKit", "0.2"
     pod "RealmSwift", "3.19.0"
     pod "SDWebImage", "4.0"
 end
@@ -43,19 +39,6 @@ post_install do |installer|
       config.build_settings["DEBUG_INFORMATION_FORMAT"] = "dwarf"
       config.build_settings.delete "IPHONEOS_DEPLOYMENT_TARGET"
       config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
-    end
-    if target.name == "Spreedly" || target.name == "Bugle"
-      target.build_configurations.each do |config|
-        config.build_settings["SWIFT_VERSION"] = "4.0"
-      end
-    elsif target.name == "Alamofire"
-      target.build_configurations.each do |config|
-        config.build_settings["SWIFT_VERSION"] = "4.2"
-      end
-    else
-      target.build_configurations.each do |config|
-        config.build_settings["SWIFT_VERSION"] = "5.0"
-      end
     end
   end
 end

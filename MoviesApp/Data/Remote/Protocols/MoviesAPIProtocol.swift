@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol MoviesAPIProtocol: RemoteDataSource, DataProvider {
+protocol MoviesAPIProtocol: DataProvider {
     func getMovie(movieId: Int, completion: @escaping (Movie?, String?) -> Void)
     func getMovies(completion: @escaping (MoviesResponse?, String?) -> Void)
     func getLatestMovie(completion: @escaping (Movie?, String?) -> Void)

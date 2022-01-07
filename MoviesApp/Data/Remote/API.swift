@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 
 struct APIConstants {
     static let apiVersion = "/api/\(InfoPlistHelper.lookUpFor(.apiVersion) ?? "")"

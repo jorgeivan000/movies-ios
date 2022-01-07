@@ -7,13 +7,29 @@
 //
 
 import Foundation
-import Alamofire
 
 enum UserKeys: String {
     case user
     case name
 }
 
+/// Movies endpoint
+enum MoviesEndpoint {
+    /// Lists all the Movies.
+    case index
+    /// Fetches a book with a given identifier.
+    //case get(identifier: String)
+    /// Creates a book with the given parameters.
+    //case create(parameters: [String: Any?])
+    
+    /// Lists all the upcoming movies.
+    case upcoming
+    /// Lists all the popular movies.
+    case popular
+    /// Get the latest movie.
+    case latest
+}
+/*
 enum MoviesRouter: AuthenticatedRouter, RequestDecorable {
     var authToken: String {
         return .empty
@@ -70,3 +86,4 @@ enum MoviesRouter: AuthenticatedRouter, RequestDecorable {
         return urlRequest
     }
 }
+*/

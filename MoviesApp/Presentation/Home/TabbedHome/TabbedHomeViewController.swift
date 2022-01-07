@@ -19,7 +19,6 @@ class TabbedHomeViewController: UITabBarController {
     //MARK: - Variables
     var presenter: TabbedHomeViewPresenter!
     var balance: Double = 0.0
-    var showGiantButton = true
     let reachability = try!  Reachability()
     var hasDebitAccount = false
     var debitCardOnReplacement = false
